@@ -3,7 +3,9 @@ Rails.application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-
+CarrierWave.configure do |config|
+ config.cache_storage = :file
+end
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
@@ -40,6 +42,7 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
+config.active_storage.service = :cloudinary
 
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil

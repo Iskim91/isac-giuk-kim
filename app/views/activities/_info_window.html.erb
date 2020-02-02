@@ -1,6 +1,11 @@
-<h2><%= activity.name %></h2>
-<p><strong>Category:</strong> <em><%= activity.category.capitalize %></em></p>
-<p><strong>Task:</strong> <em><%= activity.task %></em></p>
-
-
-
+<div class="popup-card">
+  <%= cl_image_tag activity.photo, class: "map-image"%>
+  <div class="popup-info">
+    <h4 class="text-center"><%= activity.name %></h4>
+    <p><strong>Category:</strong> <%= activity.category.capitalize %></p>
+    <p><strong>Year:</strong> <%= activity.year %></p>
+    <% if activity.task.present?%>
+      <p><strong>Task:</strong> <%= activity.task %></p>
+    <% end %>
+  </div>
+</div>

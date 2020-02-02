@@ -1,1 +1,22 @@
 // Specific CSS for your home-page
+.activity-container{
+  margin: 0px 10%;
+}
+
+body{
+  background: #081317;
+}
+.title{
+  font-size: 52px;
+  margin-bottom: 26px;
+}
+
+.social-media-icon{
+  display: flex;
+  justify-content: center;
+  color: rgb(2, 221, 229);
+  font-size: 2em;
+  i{
+    margin-right: 12px;
+  }
+}

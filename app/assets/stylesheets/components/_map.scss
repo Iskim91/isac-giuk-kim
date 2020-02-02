@@ -3,6 +3,27 @@
 }
 
 .mapboxgl-popup-content {
-  text-align: center;
+  text-align: left;
   font-family: 'Open Sans', sans-serif;
+}
+
+.map-image{
+  height: 200px;
+  width: 100%;
+  border-radius: 2px;
+  object-fit: center;
+  object-position: center;
+}
+.map-image.cover{
+  background-size: cover;
+}
+
+.popup-info{
+  p{
+    margin-bottom: 0px;
+  }
+}
+
+.mapboxgl-popup-content{
+  background: #38a0ba;
 }

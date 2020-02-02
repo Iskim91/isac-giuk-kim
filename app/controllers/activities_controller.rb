@@ -1,7 +1,13 @@
 class ActivitiesController < ApplicationController
   def index
     # @activities = Activity.where.not(latitude: nil, longitude: nil)
-    @activities = Activity.geocoded
+    @categories = ['work', 'education', 'travel', 'all']
+    if params[:query].present?
+      @activities = Activity.where(category: params[:query]).geocoded
+    else
+      @activities = Activity.all
+    end
+    # @activities = Activity.geocoded
     @markers = @activities.map do |activity|
       {
         lng: activity.longitude,

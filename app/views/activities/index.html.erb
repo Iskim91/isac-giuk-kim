@@ -1,8 +1,21 @@
-<h1>Title</h1>
-<div
-  id="map"
-  style="width: 100%;
-  height: 600px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
+<%= render 'activities/map', markers: @markers %>
+<div class="activity-container">
+  <%= render 'activities/category_btn' %>
+
+  <%= image_tag('isac.jpeg', class:'avatar-user') %>
+  <h1 class="text-center text-white title">Isac Giuk (Ji Uk) Kim</h1>
+  <div class="social-media-icon">
+    <%= link_to 'https://www.linkedin.com/in/isac-giuk-ji-uk-kim-4b6498106/', target:'_blank' do %>
+      <i class="fab fa-linkedin"></i>
+    <% end %>
+    <%= link_to "https://www.instagram.com/iskim91/?hl=en", target:'_blank' do %>
+      <i class="fab fa-instagram"></i>
+    <% end %>
+    <%= link_to "https://github.com/iskim91" do  %>
+      <i class="fab fa-github"></i>
+    <% end %>
+    <%= mail_to "jk724814@gmail.com", target:'_blank' do %>
+      <i class="far fa-envelope"></i>
+    <% end %>
+  </div>
+</div>

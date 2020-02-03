@@ -1,13 +1,13 @@
-.btn-category{
-  background-color: rgb(2, 221, 229);
+.btn-search{
+  background-color: rgb(1, 199, 199);
   border-radius: 50px;
-  padding: 3px 18px;
+  padding: 2px 18px;
   color: white;
   border: none;
   margin-right: 12px;
+  margin-top: 12px;
   &:hover{
-    background-color: rgba(2, 221, 229, 0.7);
-
+    background-color: rgba(1, 199, 199, 0.8);
   }
 }
 
@@ -15,4 +15,15 @@
   margin-bottom: 12px;
   display: flex;
   justify-content: center;
+}
+
+.social-media-icon a{
+  text-decoration: none;
+  color: rgb(1, 199, 199);
+  margin-top: 8px;
+
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
 }

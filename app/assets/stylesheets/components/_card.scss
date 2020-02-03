@@ -1,0 +1,25 @@
+.project-cards{
+  padding: 16px;
+  grid-gap: 12px;
+  background-color: white;
+  margin-bottom: 36px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.2);
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.project-image{
+  height: 40vh;
+  width: auto;
+
+  object-fit: cover;
+  // margin: 0px auto;
+}
+
+.projects{
+  margin-top: 24px;
+}

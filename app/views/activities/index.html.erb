@@ -1,21 +1,14 @@
-<%= render 'activities/map', markers: @markers %>
 <div class="activity-container">
-  <%= render 'activities/category_btn' %>
+  <%= render 'activities/map', markers: @markers %>
+  <%= render 'activities/search_btn' %>
+    <div class="title-info">
+      <%= image_tag('isac.jpeg', class:'avatar-user') %>
+      <h1 class="text-center text-white title">Isac Giuk (Ji Uk) Kim</h1>
+      <%= render 'activities/social_media_links' %>
+    </div>
+</div>
+<div class="container">
+  <h2 class='category'>Projects</h2>
+  <%= render 'activities/projects' %>
 
-  <%= image_tag('isac.jpeg', class:'avatar-user') %>
-  <h1 class="text-center text-white title">Isac Giuk (Ji Uk) Kim</h1>
-  <div class="social-media-icon">
-    <%= link_to 'https://www.linkedin.com/in/isac-giuk-ji-uk-kim-4b6498106/', target:'_blank' do %>
-      <i class="fab fa-linkedin"></i>
-    <% end %>
-    <%= link_to "https://www.instagram.com/iskim91/?hl=en", target:'_blank' do %>
-      <i class="fab fa-instagram"></i>
-    <% end %>
-    <%= link_to "https://github.com/iskim91" do  %>
-      <i class="fab fa-github"></i>
-    <% end %>
-    <%= mail_to "jk724814@gmail.com", target:'_blank' do %>
-      <i class="far fa-envelope"></i>
-    <% end %>
-  </div>
 </div>

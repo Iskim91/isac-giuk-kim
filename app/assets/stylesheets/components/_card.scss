@@ -1,25 +1,74 @@
-.project-cards{
-  padding: 16px;
-  grid-gap: 12px;
+// .project-cards{
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 12px;
+//   padding: 12px;
+//   // margin-right: 30px;
+//   p{
+//     font-size: 12px;
+//   }
+//   a{
+//     text-decoration: none;
+//     color: black;
+//   }
+// }
+
+.project-card{
   background-color: white;
-  margin-bottom: 36px;
   text-align: center;
-  border-radius: 2px;
-  box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.2);
-  a{
-    text-decoration: none;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  // height: 500px;
+  padding: 12px;
+  img{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+    a{
     color: black;
+    text-decoration: none;
+    &:hover{
+      color: inherit;
+    }
   }
 }
 
-.project-image{
-  height: 40vh;
-  width: auto;
-
-  object-fit: cover;
-  // margin: 0px auto;
+.skill-cards{
+  // background-image: linear-gradient(to right, rgba(39, 40, 35, 0.3), white);
+  box-shadow: -3px 6px 23px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border: 8px solid rgb(39, 40, 35);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  grid-gap: 12px;
+  width: 500px;
+  color: black;
+  margin-right: 80px;
+  padding: 12px;
+  p{
+    font-size: 12px;
+  }
 }
+.skill-cards::after{
+  position: absolute;
+  content:'';
+  width: 50%;
+  height: 100%;
+  background-color: rgba(39, 40, 35, 0.05);
+}
+.skill-card{
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  img{
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+  }
 
-.projects{
-  margin-top: 24px;
 }

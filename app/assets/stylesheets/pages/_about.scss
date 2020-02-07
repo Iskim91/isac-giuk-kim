@@ -1,0 +1,30 @@
+.about{
+  position: relative;
+  height: 60vh;
+  background-color: #FE6D64 ;
+  z-index: 9;
+  clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1.5vw), 0 100%);
+  margin-bottom: -1.5vw;
+  display:grid;
+  place-items: center;
+  color: white;
+}
+
+.about-container{
+  display: flex;
+}
+
+.about-info{
+  margin-left: 80px;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  p{
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+

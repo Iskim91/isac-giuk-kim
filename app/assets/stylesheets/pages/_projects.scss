@@ -1,0 +1,33 @@
+.portfolio{
+  position: relative;
+  height: 60vh;
+  background-color: #A7BEB7;
+   z-index: 7;
+  // clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1.5vw), 0 100%);
+  margin-bottom: -1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projects{
+  width: 500px;
+  margin-left: 80px;
+
+}
+
+.slider{
+  position: relative;
+  box-shadow: -3px 6px 23px rgba(0, 0, 0, 0.4);
+  // border: 8px solid rgb(39, 40, 35);
+  border-radius: 2px;
+
+}
+
+// .slider::after{
+//   position: absolute;
+//   content:'';
+//   width: 50%;
+//   height: 100%;
+//   // background-color: rgba(39, 40, 35, 0.06);
+//   top: 0px;
+// }

@@ -12,7 +12,7 @@ p {
   position: relative;
   display: grid;
   place-items: center;
-  height: 40vh;
+  height: 42vh;
   background-color: #40434E;
   clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 1.5vw));
   margin-bottom: -1.5vw;
@@ -21,6 +21,7 @@ p {
 }
 
 .section-title{
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +29,17 @@ p {
 }
 
 
-
+.map{
+  position: relative;
+  height: 60vh;
+  background-color: rgb(1, 180, 180);
+  clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1.5vw), 0 100%);
+  margin-bottom: -1.5vw;
+  z-index: 11;
+  p{
+    font-size: 12px;
+  }
+}
 
 
 // #B3C9D1

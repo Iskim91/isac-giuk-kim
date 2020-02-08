@@ -2,7 +2,7 @@
   <% @categories.each_with_index do |c, i| %>
     <% if c == "all" %>
       <%= form_tag activities_path, method: :get do %>
-        <%= submit_tag c.capitalize, class: "btn-search" %>
+        <%= submit_tag c.capitalize, class: "btn-search"%>
       <% end %>
     <% else %>
       <%= form_tag activities_path, method: :get do %>
@@ -12,7 +12,7 @@
           value: c,
           id: i
         %>
-        <%= submit_tag c.capitalize, class: "btn-search" %>
+        <%= submit_tag c.capitalize, class: "btn-search"%>
       <% end %>
     <% end %>
   <% end %>

@@ -1,17 +1,16 @@
 .skills{
   position: relative;
   height: 60vh;
-  background-color: #E8B8A1;
+  background-color: white;
   z-index: 8;
   clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 1.5vw));
   margin-bottom: -1.5vw;
   display:grid;
   place-items: center;
-  color: white;
+  color: rgb(125, 125, 160);
+
 }
 
 .skill-container{
-
   display: flex;
-
 }

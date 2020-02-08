@@ -1,16 +1,19 @@
-<%#= render 'activities/map', markers: @markers %>
-<div class="intro">
+<div class="map">
+  <%= render 'activities/map', markers: @markers %>
+</div>
+<div class="intro" >
   <div class="title">
     <%= image_tag('isac.jpeg', class:'avatar-user') %>
     <h1 class="text-center">Isac Giuk (Ji Uk) Kim</h1>
     <p>Web Developer</p>
     <%= render 'activities/social_media_links' %>
+    <%= render 'activities/search_btn' %>
   </div>
 </div>
 <div class="about">
-  <div class="about-container">
-    <h1 class="section-title">About</h1>
-    <div class="about-info">
+  <div class="about-container" data-aos-anchor-placement="top-bottom">
+    <h1 class="section-title" data-aos="fade-right" >About</h1>
+    <div class="about-info" data-aos="fade-left" >
       <p>Hello, I am Isac Giuk Kim. </p>
       <p>I majored in Business Adiministration at Hanyang University in Seoul, South Korea.</p>
       <p>However, after three and a half years I decided to transfer to Ohio University in Athens, Ohio. </p>
@@ -25,10 +28,10 @@
     <div class="skill-cards">
       <%= render 'activities/skills' %>
     </div>
-    <h1 class="section-title">Skills</h1>
+    <h1 class="section-title" data-aos="fade-left" data-aos-anchor-placement="center-bottom">Skills</h1>
   </div>
 </div>
 <div class="portfolio">
-  <h1 class="section-title text-white">Projects</h1>
+  <h1 class="section-title text-white" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Projects</h1>
   <%= render 'activities/projects' %>
 </div>

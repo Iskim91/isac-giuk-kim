@@ -38,9 +38,9 @@
 
 .skill-cards{
   // background-image: linear-gradient(to right, rgba(39, 40, 35, 0.3), white);
-  box-shadow: -3px 6px 23px rgba(0, 0, 0, 0.4);
-  background-color: white;
-  border: 8px solid rgb(39, 40, 35);
+  // box-shadow: -3px 6px 23px rgba(0, 0, 0, 0.4);
+  // background-color: white;
+  // border: 8px solid rgb(39, 40, 35);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -54,13 +54,13 @@
     font-size: 12px;
   }
 }
-.skill-cards::after{
-  position: absolute;
-  content:'';
-  width: 50%;
-  height: 100%;
-  background-color: rgba(39, 40, 35, 0.05);
-}
+// .skill-cards::after{
+//   position: absolute;
+//   content:'';
+//   width: 50%;
+//   height: 100%;
+//   background-color: rgba(39, 40, 35, 0.05);
+// }
 .skill-card{
   height: 80px;
   width: 100%;

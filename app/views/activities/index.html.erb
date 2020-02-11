@@ -13,7 +13,10 @@
 </div>
 <div class="about">
   <div class="about-container" data-aos-anchor-placement="top-bottom">
-    <h1 class="section-title" data-aos="fade-right" >About</h1>
+    <div class="section" data-aos="fade-right">
+      <h1 class="section-title" >About</h1>
+      <p class="section-description">A bit of information about myself in regards to my previous education and experiences around the world.</p>
+   </div>
     <div class="about-info" data-aos="fade-left" >
       <p>Hello, I am Isac Giuk Kim. </p>
       <p>I majored in Business Adiministration at Hanyang University in Seoul, South Korea.</p>
@@ -29,10 +32,16 @@
     <div class="skill-cards">
       <%= render 'activities/skills' %>
     </div>
-    <h1 class="section-title" data-aos="fade-left" data-aos-anchor-placement="center-bottom">Skills</h1>
+    <div class="section">
+      <h1 class="section-title" data-aos="fade-left" data-aos-anchor-placement="center-bottom">Skills</h1>
+      <p class="section-description" data-aos="fade-left" data-aos-anchor-placement="center-bottom">These skills are in relation to collaboration platforms, Conception, Development, Design, and Cloud services</p>
+    </div>
   </div>
 </div>
 <div class="portfolio">
-  <h1 class="section-title text-white" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Projects</h1>
+  <div class="section text-white">
+    <h1 class="section-title" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Projects</h1>
+    <p class="section-description" data-aos="fade-right" data-aos-anchor-placement="center-bottom">These projects where created by using Ruby on Rails as their main platform. These projects where developed during our last weeks in Le Wagon.</p>
+  </div>
   <%= render 'activities/projects' %>
 </div>

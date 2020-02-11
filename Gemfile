@@ -8,7 +8,6 @@ gem 'puma'
 gem 'rails', '5.2.4.1'
 gem 'redis'
 gem 'cloudinary'
-gem 'carrierwave'
 gem 'geocoder'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
@@ -17,7 +16,6 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'activestorage-cloudinary-service'
-
 
 group :development do
   gem 'web-console', '>= 3.3.0'

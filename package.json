@@ -1,6 +1,9 @@
 {
   "name": "isac-giuk-kim",
   "private": true,
+  "scripts": {
+    "start": "node app"
+  },
   "dependencies": {
     "@rails/webpacker": "4.2.2",
     "aos": "^3.0.0-beta.6",

@@ -1,6 +1,6 @@
 .skills{
   position: relative;
-  height: 60vh;
+  padding: 40px;
   background-color: white;
   z-index: 8;
   clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 1.5vw));
@@ -8,9 +8,89 @@
   display:grid;
   place-items: center;
   color: rgba(0, 0, 0, 0.7);
-// #C3C4C7
 }
 
 .skill-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.section-skills{
+  width: 300px;
+  text-align: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  h1{
+    font-size: inherit;
+    font-family: inherit;
+  }
+  p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .skill-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-auto-flow: dense;
+  }
+  .section-skills{
+    grid-row-start: 1;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .skill-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-auto-flow: dense;
+  }
+  .section-skills{
+    grid-row-start: 1;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .skill-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .section-skills{
+    grid-row-start: auto;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .skill-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .section-skills{
+    grid-row-start: auto;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .skill-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .section-skills{
+    grid-row-start: auto;
+  }
 }

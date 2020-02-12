@@ -17,10 +17,8 @@
 .project-card{
   background-color: white;
   text-align: center;
-  width: 600px;
-  display: flex;
-  align-items: center;
   padding: 12px;
+
   img{
     height: 200px;
     width: 100%;
@@ -40,7 +38,6 @@
     margin-bottom: 0px;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.6);
-
   }
 }
 
@@ -50,9 +47,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
   grid-gap: 12px;
-  width: 500px;
+  width: 30vw;
   color: rgba(0, 0, 0, 0.6);
-  margin-right: 80px;
+
   padding: 12px;
   p{
     font-size: 12px;
@@ -60,12 +57,48 @@
 }
 
 .skill-card{
-  height: 80px;
+  height: 10vh;
   width: 100%;
   text-align: center;
   img{
     height: 50px;
     width: 100%;
     object-fit: contain;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .skill-cards{
+    width: 70vw;
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .skill-cards{
+    width: 70vw;
+  }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .skill-cards{
+    width: 40vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .skill-cards{
+    width: 40vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .skill-cards{
+    width: 30vw;
   }
 }

@@ -1,35 +1,72 @@
 .portfolio{
   position: relative;
-  height: 60vh;
+  padding: 40px;
   background-color: #A7BEB7;
-   z-index: 7;
-  // clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1.5vw), 0 100%);
+  z-index: 7;
   margin-bottom: -1.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
-#projects{
-  width: 500px;
-  margin-left: 80px;
-
+.portfolio-container{
+  place-items: center;
+  display: grid;
+  grid-gap: 12px;
 }
+
 
 .slider{
   position: relative;
   box-shadow: -3px 6px 23px rgba(0, 0, 0, 0.4);
-  // border: 8px solid rgb(39, 40, 35);
   border-radius: 2px;
-
 }
 
-// .slider::after{
-//   position: absolute;
-//   content:'';
-//   width: 50%;
-//   height: 100%;
-//   // background-color: rgba(39, 40, 35, 0.06);
-//   top: 0px;
-// }
+@media (min-width: 100px) and (max-width: 575px) {
+  .portfolio-container{
+    grid-template-columns: 1fr;
+  }
+  #projects{
+    width: 80vw;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .portfolio-container{
+    grid-template-columns: 1fr;
+  }
+  #projects{
+    width: 80vw;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .portfolio-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #projects{
+    width: 55vw;
+    // margin-left: 12px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .portfolio-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #projects{
+    width: 55vw;
+    // margin-left: 12px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .portfolio-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #projects{
+    width: 40vw;
+  }
+}

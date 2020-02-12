@@ -32,16 +32,18 @@
     <div class="skill-cards">
       <%= render 'activities/skills' %>
     </div>
-    <div class="section">
+    <div class="section-skills">
       <h1 class="section-title" data-aos="fade-left" data-aos-anchor-placement="center-bottom">Skills</h1>
       <p class="section-description" data-aos="fade-left" data-aos-anchor-placement="center-bottom">These skills are in relation to collaboration platforms, Conception, Development, Design, and Cloud services</p>
     </div>
   </div>
 </div>
 <div class="portfolio">
-  <div class="section text-white">
-    <h1 class="section-title" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Projects</h1>
-    <p class="section-description" data-aos="fade-right" data-aos-anchor-placement="center-bottom">These projects were created by using Ruby on Rails as their main platform. These projects where developed during our last weeks in Le Wagon.</p>
+  <div class="portfolio-container">
+    <div class="section text-white">
+      <h1 class="section-title" data-aos="fade-right" data-aos-anchor-placement="center-bottom">Projects</h1>
+      <p class="section-description" data-aos="fade-right" data-aos-anchor-placement="center-bottom">These projects were created by using Ruby on Rails as their main platform. These projects where developed during our last weeks in Le Wagon.</p>
+    </div>
+    <%= render 'activities/projects' %>
   </div>
-  <%= render 'activities/projects' %>
 </div>

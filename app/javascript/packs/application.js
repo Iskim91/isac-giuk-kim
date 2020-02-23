@@ -28,12 +28,19 @@ AOS.init({
 });
 
 
-window.addEventListener('scroll', () => {
-  const scrolled = window.scrollY;
-  console.log(scrolled);
-})
+// window.addEventListener('scroll', () => {
+//   const scrolled = window.scrollY;
+//   console.log(scrolled);
+// })
 
-flatpickr(".flatpickr",{});
+const calender = flatpickr(".flatpickr",{
+  mode: "range",
+  minDate: "today",
+  dateFormat: "Y-m-d",
+  conjunction: " - ",
+  // defaultDate: [ Date.now, Date.now]
+  });
+console.log(calender[0]);
 // ('.flatpickr').flatpickr();
 // document.addEventListener("turbo-links:load", () =>{
 //   flatpickr(".flatpickr", {

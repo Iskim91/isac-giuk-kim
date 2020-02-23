@@ -11,7 +11,7 @@
     <%= render 'activities/search_btn' %>
     <%= form_for(@activity) do |f| %>
     <%= f.text_field :start_date, class: "flatpickr" %>
-
+    <%= f.submit %>
     <% end %>
 
   </div>

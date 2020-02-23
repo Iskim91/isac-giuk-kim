@@ -17,4 +17,8 @@ class ActivitiesController < ApplicationController
       }
     end
   end
+
+  def create
+    raise
+  end
 end

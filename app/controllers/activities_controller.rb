@@ -2,6 +2,7 @@ class ActivitiesController < ApplicationController
   def index
     # @activities = Activity.where.not(latitude: nil, longitude: nil)
     @categories = ['work', 'education', 'travel', 'all']
+    @activity = Activity.new
     if params[:query].present?
       @activities = Activity.where(category: params[:query]).geocoded
     else

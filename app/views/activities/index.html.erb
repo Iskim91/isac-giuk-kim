@@ -9,6 +9,11 @@
     <p>Web Developer</p>
     <%= render 'activities/social_media_links' %>
     <%= render 'activities/search_btn' %>
+    <%= form_for(@activity) do |f| %>
+    <%= f.text_field :start_date, class: "flatpickr" %>
+
+    <% end %>
+
   </div>
 </div>
 <div class="about">

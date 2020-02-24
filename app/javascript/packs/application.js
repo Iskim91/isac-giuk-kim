@@ -9,7 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import places from "places.js"
 import { initMapbox } from './map';
 initMapbox();
 toTop();
@@ -25,3 +25,10 @@ AOS.init({
   duration: 1000,
 });
 
+const addressInput = document.querySelector('.address-input')
+
+if (addressInput) {
+  const placesAutocomplete = places({
+    container: addressInput
+  });
+}

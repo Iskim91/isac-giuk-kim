@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
-gem 'bootsnap', require: false
+# gem 'bootsnap', require: false
+gem 'bootsnap', '>= 1.1.0', '< 1.4.2', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'

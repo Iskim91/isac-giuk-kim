@@ -1,10 +1,12 @@
 .portfolio{
   position: relative;
-  padding: 40px;
+  padding: 50px;
   background-color: #A7BEB7;
   z-index: 7;
   margin-bottom: -1.5vw;
   font-family: 'Raleway', sans-serif;
+  clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1.5vw), 0 100%);
+  margin-bottom: -1.5vw;
   font-size: 18px;
   display: grid;
   place-items: center;

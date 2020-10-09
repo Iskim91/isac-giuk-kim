@@ -17,6 +17,7 @@ toTop();
 $('.slider').slick({
   dots: true,
   speed: 1000,
+  arrows: false
 });
 
 
